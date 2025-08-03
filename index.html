@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Race - Play The Ultimate Online Obstacle Course Game</title>
+    <meta name="description" content="Jump into Survival Race, the most thrilling free online obstacle game. Test your reflexes, conquer challenging courses, and race against the clock. Play now!">
+    <meta name="keywords" content="Survival Race, online game, obstacle course, running game, free game, web game, browser game">
+    <link rel="canonical" href="https://survivalrace1.com/">
+    
+    <style>
+        /*
+        ===================================================================
+        CSS using TailwindCSS principles with an Apple-inspired color scheme.
+        - CSS Variables for easy theme management.
+        - Mobile-first responsive design.
+        - Utility classes for clean and maintainable structure.
+        ===================================================================
+        */
+
+        /* :root -> Defines global CSS variables for colors and fonts */
+        :root {
+            --color-bg: #f9fafb; /* Off-white, similar to Apple's light mode bg */
+            --color-text: #1f2937; /* Dark Slate Gray for main text */
+            --color-text-secondary: #4b5563; /* Lighter gray for subtitles */
+            --color-primary: #3b82f6; /* A vibrant blue for links and highlights */
+            --color-border: #e5e7eb; /* Light gray for borders */
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* Basic Reset and Body Styling */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        /* Layout Container */
+        .container {
+            width: 100%;
+            max-width: 1024px; /* Max width for large screens */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem; /* 24px */
+            padding-right: 1.5rem; /* 24px */
+        }
+
+        /* Header and Footer Styling */
+        .site-header, .site-footer {
+            padding: 2rem 0;
+        }
+
+        .site-footer {
+            margin-top: 3rem;
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 0.875rem; /* 14px */
+        }
+        
+        .site-footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Typography */
+        h1, h2 {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        /* H1 - Main Title (SEO Critical) */
+        h1 {
+            font-size: 2.5rem; /* 40px */
+            color: var(--color-text);
+            text-align: center;
+        }
+
+        /* H2 - Section Titles (SEO important) */
+        h2 {
+            font-size: 1.875rem; /* 30px */
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Intro one-liner sentence */
+        .intro-sentence {
+            font-size: 1.25rem; /* 20px */
+            color: var(--color-text-secondary);
+            text-align: center;
+            margin-top: 0.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Game Iframe Section */
+        .game-wrapper {
+            margin-top: 2rem;
+        }
+
+        /* This is the key for a responsive iframe */
+        .game-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Common game aspect ratio */
+            overflow: hidden;
+            border-radius: 0.75rem; /* 12px rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            background-color: #000; /* Black background while iframe loads */
+        }
+
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* Responsive adjustments for larger screens */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.75rem; /* 60px */
+            }
+
+            h2 {
+                font-size: 2.25rem; /* 36px */
+            }
+            
+            .container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Survival Race</h1>
+            <p class="intro-sentence">The ultimate online obstacle race. Run, jump, and conquer the course to prove you're the best!</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="game-section">
+            <div class="game-wrapper">
+                <div class="game-container">
+                    <iframe 
+                        src="https://survivalrace.net/content/uploads/survival-race/" 
+                        frameborder="0" 
+                        scrolling="no"
+                        allowfullscreen="true"
+                        title="Survival Race Game">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-game">
+        
+            <h2>About the Game</h2>
+            <p>
+                Welcome to Survival Race, a fast-paced, action-packed running game designed to test your agility and reflexes. In this game, you control a character who must navigate through a series of increasingly difficult obstacle courses. Your goal is simple: survive as long as you can, collect points, and set a new high score. It's easy to learn but challenging to master!
+            </p>
+
+            <h2>How to Play</h2>
+            <p>
+                The controls are intuitive. Use your keyboard's arrow keys (or on-screen controls on mobile) to move left and right, and press the spacebar (or tap the screen) to jump over hurdles, gaps, and other dangerous traps. Timing is everything. A single misstep could mean the end of your run, so stay focused and anticipate the obstacles ahead.
+            </p>
+
+            <h2>Game Features</h2>
+            <p>
+                - **Endless Fun:** The course is procedurally generated, meaning you get a new, unique challenge every time you play.<br>
+                - **Responsive Controls:** Whether you're on a PC or a mobile device, the controls are smooth and responsive.<br>
+                - **Clean Graphics:** Enjoy a minimalist and clear art style that lets you focus on the action.<br>
+                - **Leaderboards:** Compete with players from around the world to see who is the true Survival Race champion. (Feature coming soon!)
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Survival Race. All Rights Reserved. | <a href="https://survivalrace1.com/">survivalrace1.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
